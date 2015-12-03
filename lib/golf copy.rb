@@ -3,7 +3,7 @@ class Golf
 
   def s.hole1(v)
     (1..v).map { |x|
-      p = {3=>'pling',5=>'plang',7=>'plong'}.map {|f,n| n if x % f == 0}
+      p = {3=>'pling',5 =>'plang',7=>'plong'}.map {|f,n| n if x % f == 0}
       p.any? ? p.join : x
     }
   end
